@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula WEB 01</title>
+</head>
+<body bgcolor = "silver" background = "" text = "black" alink = "gold" vlink = "black" link = "blue">
+
+    <a name = "topo"></a>
+    <!-- link = Cor com o link recém criado -->
+    <!-- alink = Cor quando clica no link -->
+    <!-- valink = Cor quando o link foi visitado -->
+
+    <h1> Hello, World!! </h1>
+    <h1> Exemplo 1 - Hyperlinks </h1>
+
+    <!-- Tag de Hyperlink -->
+    <!-- _blank - Abre em uma nova página -->
+    <!-- _top   - Abre na mesma página -->
+    <a href = "https://www.fiemg.com.br/senai/" target = "_blank" title = "Site do Senai MG"> Clique aqui </a>
+    
+    <br/> <!-- Tag de Quebra de Linha -->
+
+    <a href = "pagina.html" target = "_top" title = "Página Exemplo"> Acesse </a>
+
+    <h2> Exemplo 2 - Imagens </h2>
+
+    <img src = "img/1 - Illustrious.png" width = "500" height = "500" alt = "Illustrious Original"/>
+
+    <p align = "center">
+    <a href = "http://www.google.com" target = "_blank" title = "Site do Google">
+        <img src = "img/2 - Illustrious Ball.png" width = "500" height = "500" alt = "Illustrious Ball"/>
+    </a>
+    </p>
+
+    <br/>
+
+    <a href = "3 - Illustrious Tea Party.png" target = "_blank" title = "Imagem Ampliada">
+        <img src = "img/3 - Illustrious Tea Party.png" width = "100" height = "100" alt = "Illustrious Tea Party"/>
+    </a>
+
+    <hr size = "5" color = "cyan"/>
+
+    <figure>
+        <img src = "img/4 - Illustrious Lambent Melody.png" width = "500" height = "500" alt = "Illustrious Lambent Melody"/>
+        <figcaption> Fonte: Azur Lane Wiki </figcaption>
+    </figure>
+
+    <hr size = "5" color = "cyan"/>
+
+    <img src = "img/5 - Victorious.png" width = "500" height = "500" alt = "Victorious"/>
+
+    <hr size = "5" color = "cyan"/>
+
+    <img src = "img/6 - Scylla.png" width = "500" height = "500" alt = "Scylla"/>
+    <img src = "img/7 - Scylla Limelight.png" width = "700" height = "500" alt = "Scylla Limelight"/>
+
+    <h3> Exemplo 3 - Parágrafo </h3>
+
+    <p align = "justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae in cumque reprehenderit rerum beatae ullam voluptates perferendis, 
+        excepturi neque ad earum recusandae exercitationem molestias delectus porro, laborum dolore et architecto?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos nihil quisquam tempora omnis voluptatum quis sequi iure, 
+        earum consequatur, aperiam quasi recusandae dicta ab odio exercitationem ipsum ad consectetur!
+    </p>
+
+    <details>
+        <summary> Leia mais... </summary>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae in cumque reprehenderit rerum beatae ullam voluptates perferendis, 
+            excepturi neque ad earum recusandae exercitationem molestias delectus porro, laborum dolore et architecto?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos nihil quisquam tempora omnis voluptatum quis sequi iure, 
+            earum consequatur, aperiam quasi recusandae dicta ab odio exercitationem ipsum ad consectetur!
+        </p>
+    </details>
+
+    <p align = "left">Texto Alinhado a Esquerda</p>
+    <p align = "right">Texto Alinhado a Direita</p>
+    <p align = "center">Texto Centralizado</p>
+    <p align = "justify">Texto Justificado</p>
+
+    <h4> Exemplo 4 - Formatação de Texto </h4>
+
+    <strong> Texto em Negrito </strong>
+    <br/>
+    <em> Texto em Itálico </em>
+    <br/>
+    <u> Texto Sublinhado </u>
+    <br/>
+    <s> Texto Tachado </s>
+    <br/><br/>
+
+    <!-- Concatenar Tags de Formatação -->
+    <strong><em><u> Texto Negrito, Itálico e Sublinhado </u></em></strong>
+    <br/><br/>
+
+    <!-- Tag de Formatação font -->
+    <font color = "green" size = "15" face = "verdana, arial, times new roman">
+        <strong><em> Texto formatado com a Tag Font </em></strong>
+    </font>
+
+    <h5> Exemplo 5 - Audio e Vídeo </h5>
+
+    <audio controls autoplay loop>
+        <source src = "audio/Star Sea Dream.mp3" type = "audio/mp3"/>
+    </audio>
+
+    <br/>
+
+    <audio controls loop>
+        <source src = "audio/Snowfall.mp3" type = "audio/mp3"/>
+    </audio>
+
+    <br/>
+
+    <video controls autoplay loop width = "500" height = "500">
+        <source src = "video/Star Sea.mp4" type = "video/mp4"/>
+    </video>
+
+    <br/>
+
+    <video controls loop width = "500" height = "500">
+        <source src = "video/Snow.mp4" type = "video/mp4"/>
+    </video>
+
+    <h6> Exemplo 6 - Voltar ao Topo </h6>
+
+    <a href = "#topo" title = "Voltar ao Topo"> Voltar ao Topo </a>
+
+</body>
+</html>
