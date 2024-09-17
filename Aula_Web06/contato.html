@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula HTML/CSS </title>
+    <link rel = "stylesheet" href = "estilo.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href = "index.html" target = "_top"> INICIO </a></li>
+            <li><a href = "servico.html" target = "_top"> SERVIÇOS </a></li>
+            <li><a href = "sobre.html" target = "_top"> SOBRE </a></li>
+            <li><a href = "contato.html" target = "_top"> CONTATO </a></li>
+        </ul>
+    </nav>
+
+    <header></header>
+
+    <main>
+        <div class = "row">
+            <section id = "sitecontato">
+                <p align = "center">
+                <img id = "imgcontato" src = "img/geopillar.png" alt = "Geo Pillar">
+                </p>
+            </section>
+
+            <aside id = "sitecontato2">
+                <fieldset>
+                    <legend><strong><h2> Entre em Contato </h2></strong></legend>
+                    <br/>
+            
+                    <form action = "" method = "post">
+                        <label> Nome: <font color  = "red">*</font> </label>
+                        <input type = "text" name = "nome" id = "nome" maxlength = "80" size = "30"
+                         placeholder = "Digite seu Nome" required/>
+                        <br/> <br/>
+            
+                        <label> E-mail: <font color  = "red">*</font> </label>
+                        <input type = "email" name = "mail" id = "mail" maxlength = "60" size = "30"
+                         placeholder = "Digite seu E-mail" required/>
+                        <br/><br/>
+            
+                        <label> Sexo: <font color  = "red">*</font> </label>
+                        <br/>
+                        <input type = "radio" name = "sexo" id = "sexo" value = "M" required/>
+                        <label> Masculino </label>
+                        <br/>
+                        <input type = "radio" name = "sexo" id = "sexo" value = "F" required/>
+                        <label> Feminino </label>
+                        <br/>
+                        <input type = "radio" name = "sexo" id = "sexo" value = "O" required/>
+                        <label> Outro </label>
+                        <br/>
+                        <input type = "radio" name = "sexo" id = "sexo" value = "Not" required/>
+                        <label> Não Informar </label>
+                        <br/><br/>
+            
+                        <label> Cidade: <font color  = "red">*</font> </label>
+                        <select name = "cidade" id = "cidade" required>
+                            <option value = "" selected = "selected"> --- Selecione --- </option>
+                            <option value = "BH"> Belo Horizonte </option>
+                            <option value = "NL"> Nova Lima </option>
+                            <option value = "SB"> Sabará </option>
+                            <option value = "RP"> Raposos </option>
+                            <option value = "RC"> Rio Acima </option>
+                        </select>
+                        <br/><br/>
+            
+                        <label> Comentário: <font color  = "red">*</font> </label>
+                        <br/>
+                        <textarea name = "coment" id = "coment" cols = "40" rows = "10"
+                         maxlength = "200" placeholder = "Digite seu Comentário" required></textarea>
+                        <br/><br/>
+            
+                        <input type = "submit" name = "enviar" id = "enviar" value = "ENVIAR">
+                        <input type = "reset" name = "limpar" id = "limpar" value = "LIMPAR">
+                    </form>
+                </fieldset>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p> &copy; Todos os Direitos Reservados - Maycon Siqueira </p>
+        <p align = "center">
+            <audio controls autoplay loop>
+                <source src = "audio/Moon in One's Cup.mp3" type = "audio/mp3"/>
+            </audio>
+        </p>
+    </footer>
+    
+</body>
+</html>

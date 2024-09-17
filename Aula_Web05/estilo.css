@@ -1,0 +1,17 @@
+body {
+    background-color: #DDA0DD;
+}
+
+#texto {
+    color: #FF1493;
+    text-decoration: line-through;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.txt {
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: right;
+    color: #FFD700;
+}

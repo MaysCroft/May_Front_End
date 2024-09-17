@@ -1,0 +1,244 @@
+/* ESTILO PAGINA INDEX */
+* { /* CSS RESET:  */
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E6E6FA;
+    background-image: url("img/Paisagem.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+nav {
+    width: 960px;
+    height: 50px;
+    /* border: 1px solid #9932CC; */
+    background-color: #DAA520;
+    margin-top: 10px;
+    /* border-style: solid;
+    border-color: #A020F0;
+    border-width: 1px; */
+    /* margin: 0 auto; - Deixa centralizado */
+    border-radius: 15px; /* Suaviza borda da caixa */
+    box-shadow: 1px 1px 10px rgba(68, 88, 80, 0.6); /* Sombreamento da caixa */
+    /* Primeiro e Segundo valor: Posição da sombra   
+       Terceiro Valor: Espalhamento da sombra */
+}
+
+/* INICIO MENU CSS */
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li {
+    line-height: 50px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: consolas, arial, verdana;
+    font-size: 12pt;
+    text-shadow: 2px 2px 2px rgba(156, 19, 248, 0.6);
+}
+
+nav ul li a:hover {
+    /* border-bottom: 2px solid #000; */
+    font-size: 17pt;
+    transition: font-size, 0.3s;
+}
+
+/* FIM MENU CSS */
+
+header {
+    width: 960px;
+    height: 220px;
+    /* border: 3px solid #8A2BE2; */
+    background-color: #DAA520;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(105, 243, 248, 0.6);
+    background-image: url("img/inazuma.png");
+    background-size: 960px 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide {
+    0% {background-image: url("img/mondstad.png");}
+    25% {background-image: url("img/snowmountain.png");}
+    50% {background-image: url("img/sumeru.png");}
+    75% {background-image: url("img/sumeruforest.png");}
+    100% {background-image: url("img/sumerudesert.png");}
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 960px;
+    height: 600px;
+    /* border: 4px solid #483D8B; */
+    background-color: #EEE8AA;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(87, 68, 88, 0.6);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+section {
+    width: 350px;
+    height: 250px;
+    /* border: 1px solid #000; */
+    background-color: #FFD700;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(40, 255, 244, 0.6);
+}
+
+section img{
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+section iframe{
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+aside {
+    width: 560px;
+    height: 250px;
+    /* border: 1px solid #000; */
+    background-color: #F0E68C;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(40, 255, 244, 0.6);
+}
+
+aside h2 {
+    text-align: left;
+    padding: 8px;
+    font-family: consolas, arial, verdana;
+}
+
+aside p {
+    text-align: justify;
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    text-indent: 20px;
+}
+
+footer {
+    width: 960px;
+    height: 110px;
+    /* border: 3px solid #8A2BE2; */
+    background-color: #DAA520;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(40, 255, 244, 0.6);
+}
+
+footer p {
+    text-align: center;
+    line-height: 50px;
+    font-style: italic;
+}
+
+/* ESTILO PAGINA SERVIÇO */
+
+section #geologo{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 23px;
+}
+
+section video{
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+/* ESTILO PAGINA SOBRE */
+
+#sitesobre{
+    width: 350px;
+    height: 565px;
+    background-color: #FFD700;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(40, 255, 244, 0.6);
+}
+
+section #imgsobre{
+    width: 350px;
+    height: 565px;
+    border-radius: 10px;
+}
+
+#sitesobre2{
+    width: 560px;
+    height: 565px;
+    background-color: #F0E68C;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(40, 255, 244, 0.6);
+}
+
+/* ESTILO PAGINA CONTATO */
+
+#sitecontato {
+    width: 350px;
+    height: 565px;
+    background-color: #FFD700;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(40, 255, 244, 0.6);
+}
+
+section #imgcontato {
+    width: 350px;
+    height: 565px;
+    border-radius: 10px;
+}
+
+#sitecontato2 {
+    width: 560px;
+    height: 565px;
+    background-color: #F0E68C;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(40, 255, 244, 0.6);
+}
+
+fieldset, legend {
+    padding-left: 9px;
+    padding-top: 10px;
+}
+
+input {
+    border: 1px solid #DAA520;
+}
+
+input[type="submit"],input[type="reset"]{
+    padding:10px;
+}
