@@ -1,0 +1,49 @@
+.logo {
+    max-width: 100px;
+}
+
+header {
+    background-image: url("img/pexels-pixabay-414727.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide {
+    0% {background-image: url("img/Universe-Astronomy-Art-Concept.jpg");}
+    25% {background-image: url("img/download.webp");}
+    50% {background-image: url("img/pexels-jplenio-3262249.jpg");}
+    75% {background-image: url("img/pexels-felixmittermeier-957010.jpg");}
+    100% {background-image: url("img/pexels-pixabay-207529.jpg");}
+}
+
+.nav-item {
+    margin-left: 50px;
+}
+
+.nav-link {
+    font-weight: bolder;
+}
+.nav-link:hover {
+    color: aliceblue;
+}
+
+form {
+    padding: 5px;
+}
+
+form label {
+    font-weight: bolder;
+}
+
+form input:hover, select:hover, textarea:hover {
+    background-color: rgba(223, 219, 219, 0.6);
+}
+
+form textarea {
+    resize: none;
+}
